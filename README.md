@@ -26,7 +26,7 @@ This is a foobar app for lorem ipsum.
     >pip install python-dotenv
 
 Or use the command `pip install -r requirements.txt`
-(file is in djongo1/djongo1 dir)
+(file is in djongo1 dir)
 
 1. navigate to djongo1 folder and exectute the following commands
 

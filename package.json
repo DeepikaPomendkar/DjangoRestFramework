@@ -1,5 +1,5 @@
 {
-  "name": "my-course-guide",
+  "name": "django-rest-framework",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
