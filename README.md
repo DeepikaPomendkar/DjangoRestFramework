@@ -21,10 +21,12 @@ This is a foobar app for lorem ipsum.
 
     >pip install pip install djongo
 
+    >python -m pip install pymongo[srv]
 
-1. Start Mongodb Compass 
+    >pip install python-dotenv
 
-    Create db with name my_Db
+Or use the command `pip install -r requirements.txt`
+(file is in djongo1 dir)
 
 1. navigate to djongo1 folder and exectute the following commands
 
@@ -35,8 +37,8 @@ This is a foobar app for lorem ipsum.
 
 1. Start app
 
-    navigate to djongo1/python and run 
-    > manage.py runserver
+    navigate to djongo1 and run 
+    > python manage.py runserver
 
 1. now go to 
 http://127.0.0.1:8000/empData/

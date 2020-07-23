@@ -1,5 +1,5 @@
 {
-  "name": "my-course-guide",
+  "name": "django-rest-framework",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -39,7 +39,7 @@
   "engines": {
     "node": "10.4.1"
   },
-  "proxy": "http://localhost:4000",
+  "proxy": "http://localhost:8000",
   "browserslist": [
     ">0.2%",
     "not dead",
