@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -78,7 +80,12 @@ WSGI_APPLICATION = 'djongo1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'myDb',
+        'CLIENT': {
+            'host': os.getenv("HOST"),
+            'username': os.getenv("USER"),
+            'password': os.getenv("PASSWORD"),
+            'authMechanism': 'SCRAM-SHA-1'
+        }
     }
 }
 
