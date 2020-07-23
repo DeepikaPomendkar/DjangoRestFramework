@@ -11,8 +11,10 @@ class APICall extends Component {
   }
 
   callAPI() {
-    console.log(axiosGET("/empData"));
-    this.setState({ clicked: true });
+    axiosGET("/empData").then(res => {
+      console.log(res.data);
+      this.setState({ clicked: true });
+    });
   }
 
   render() {
