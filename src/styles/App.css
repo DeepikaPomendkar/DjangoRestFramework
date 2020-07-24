@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.logindiv{
+  width: 50%;
+  float: left;
+  height:500px;
+}
+
+.loginbox{
+  width:400px;
+  top:100px;
+  position: relative;
+  left:0;
+  right:0;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  border:1px rgb(6, 185, 230) solid;
+  box-shadow: 0 14px 28px 0 rgba(0,0,0,0.6);
+  padding-bottom: 20px;
+}
+
+.boxtitle{
+  font-size: 30px;
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 0 1px 0 rgb(6, 185, 230),
+               0 2px 0 rgb(6, 185, 230),
+               0 3px 0 rgb(6, 185, 230),
+               0 4px 0 rgb(6, 185, 230),
+               0 5px 0 rgb(6, 185, 230),
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.dp{
+  height:130px;
+  margin-bottom: 25px;
+}
+
+.errormsg{
+  color:red;
+  margin:0;
+  font-size: 15px;
+}
+
+.lbtn{
+  padding:5px;
+  background-color:rgb(6, 185, 230);
+  color:white;
+  border-radius: 10px;
+  border:cyan;
+  width:90px;
+  height:40px;
+  font-size: 18px;
+  margin:10px;
+}
+.lbtn:hover{
+  padding:5px;
+  background-color:white;
+  color:rgb(6, 185, 230);
+  border-radius: 10px;
+  border:rgb(6, 185, 230) 1px solid;
+  width:90px;
+  height:40px;
+  font-size: 18px;
+  margin:10px;
+}
+
+
+
+.linput{
+  padding:8px;
+  border-radius: 5px;
+  border: 1px solid rgb(6, 185, 230);
+  width:200px;
+  margin-bottom: 20px;
+}
+.linput:focus{
+  padding:8px;
+  border-radius: 5px;
+  border: 1px solid rgb(6, 185, 230);
+  width:200px;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+  outline: none;
+  margin-bottom: 20px;
+}

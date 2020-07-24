@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
+import '../styles/App.css'
+import Loginbox from './Loginbox'
+import Signupbox from './Signupbox'
 
 class Login extends Component {
   constructor(props) {
@@ -11,15 +14,16 @@ class Login extends Component {
   }
 
   render() {
-    if (this.state.authenticated) {
-      return <Redirect to="/" />;
-    } else {
-      return (
-        <div style={{ fontFamily: "'Josefin Sans', sans-serif" }}>
-          Reached /login! 
-        </div>
-      );
-    }
+    return (
+      <div>
+          <div class='logindiv'>
+              <Loginbox />
+          </div>
+          <div class='logindiv'>
+              <Signupbox />
+          </div>
+      </div> 
+  )
   }
 }
 
