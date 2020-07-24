@@ -13,15 +13,15 @@ class employees (models.Model):
         return self.emp_id
 
 
-class User (models.Model):
-    user_id = models.ObjectIdField()
-    username = models.CharField(max_length=15)
-    password = models.CharField(max_length=50)
-    token = models.CharField(max_length=15)
+# class User (models.Model):
+#     user_id = models.ObjectIdField()
+#     username = models.CharField(max_length=15)
+#     password = models.CharField(max_length=50)
+#     token = models.CharField(max_length=15)
 
 
 
-    def __str__(self):
-        return self.user_id
+#     def __str__(self):
+#         return self.user_id
 
 

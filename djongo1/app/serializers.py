@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import employees,User
+from .models import employees
+from django.contrib.auth.models import User
 
 from rest_framework_jwt.settings import api_settings
 
@@ -13,8 +14,6 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username',)
-
-
 
 class UserSerializerWithToken(serializers.ModelSerializer):
 
