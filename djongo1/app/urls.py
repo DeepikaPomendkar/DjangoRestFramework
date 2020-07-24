@@ -9,6 +9,7 @@ router.register('empData', EmployeeViewSet)
 urlpatterns = [
 
     path('',include(router.urls))
+
     # path('', views.EmployeeViewSet, name='app-read'),
     # path('add/', views.add, name='app-add'),
 

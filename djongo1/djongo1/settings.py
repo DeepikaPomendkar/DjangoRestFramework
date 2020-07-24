@@ -74,7 +74,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djongo1.wsgi.application'
-
+JWT_AUTH = {
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'djongo1.utils.my_jwt_response_handler'
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
