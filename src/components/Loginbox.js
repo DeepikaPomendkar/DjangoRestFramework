@@ -18,7 +18,7 @@ export default function Loginbox() {
             setErrorMsg('*Incorrect Email')
             isError=1
         }
-        if(isError==0){
+        if(isError===0){
             setErrorMsg('')
             console.log(data)
         }
@@ -27,16 +27,16 @@ export default function Loginbox() {
     
 
     return (
-        <div class='loginbox'>
-                <p class='boxtitle'>Login</p>
-                <img src={Dp} class='dp'/>
+        <div className='loginbox'>
+                <p className='boxtitle'>Login</p>
+                <img src={Dp} className='dp'/>
                 <form onSubmit={handleSubmit(onSubmit)} autoComplete='off'>
-                    <input type='text' name='email' class='linput' placeholder='Enter Email' ref={register({required:true})} />
+                    <input type='text' name='email' className='linput' placeholder='Enter Email' ref={register({required:true})} />
                     <br/>
-                    <input type='password' name='pass' class='linput' placeholder='Enter Password' ref={register({required:true})} />
+                    <input type='password' name='pass' className='linput' placeholder='Enter Password' ref={register({required:true})} />
                     <br/>
-                    <p class='errormsg'>{errorMsg}</p>
-                    <input type='Submit' class='lbtn' value='Login'/>
+                    <p className='errormsg'>{errorMsg}</p>
+                    <input type='Submit' className='lbtn' value='Login'/>
                 </form>
         </div>
     )

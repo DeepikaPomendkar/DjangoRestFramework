@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router";
 import '../styles/App.css'
-import Loginbox from './Loginbox'
-import Signupbox from './Signupbox'
+import Loginbox from '../components/Loginbox'
+import Signupbox from '../components/Signupbox'
 
 class Login extends Component {
   constructor(props) {
@@ -16,10 +16,10 @@ class Login extends Component {
   render() {
     return (
       <div>
-          <div class='logindiv'>
+          <div className='logindiv'>
               <Loginbox />
           </div>
-          <div class='logindiv'>
+          <div className='logindiv'>
               <Signupbox />
           </div>
       </div> 
